@@ -32,9 +32,16 @@ their cert was signed by a known CA (yours).
 
 `ca/vmr_install_ca.sh <container> <certfile>`
 
-This script copies the certfile into the container's `certs` 
+This script copies the certfile into the local docker container's `certs` 
 directory, then creates a CA entity within the broker to be 
 used for validating certificates signed by that CA.
+
+`ca/aws_ami_install_ca.sh <remote-host-address> <aws-ssh-identity-certificate> <ca-certificate-file> <admin-password>`
+
+This script copies the certfile into a remote AWS EC2 node running 
+a Solace PubSub+ Event Broker AMI (either Standard or Enterprise) 
+and creates a CA entity within the broker to be used for validating 
+certificates signed by that CA.
 
 
 # Server Certificate Creation
