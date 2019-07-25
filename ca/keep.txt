@@ -1,2 +1,4 @@
+The following CA files are generated and should be kept. Any other <caname.* files can be deleted:
+
 <caname>.pem
 <caname>.key

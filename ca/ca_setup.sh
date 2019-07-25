@@ -3,6 +3,8 @@
 # create a CA-certificate for signing and validating sigs on other 
 # certificates in TLS-enabled servers
 # - + - + - + - + - + - + - + - + - + - + - + - + - + - + - + - + -
+cd `dirname $0`
+
 if [ "$#" -ne 1 ]; then
 	echo "  USAGE: $0 <caname>"
 	echo ""
