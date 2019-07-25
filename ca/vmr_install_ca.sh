@@ -34,7 +34,7 @@ docker cp $certfile $container:/usr/sw/jail/certs/
 
 
 msg Extracting CAName from $certfile CNAME
-cname=`openssl x509 -in $certfile -text | grep 'Subject:' | sed 's/^.*CN=\(.*\)\/.*$/\1/g'`
+cname=`openssl x509 -in $certfile -text | grep 'Subject:' | sed 's/^.*CN *= *//' | sed 's/,.*//'`
 
 msg Creating $cname on $vmr via SEMP command
 cat .create-ca.xml | sed "s/__CANAME__/$cname/" > tmp.xml
