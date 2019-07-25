@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/9_0VMR">
+    <authentication>
+        <create>
+            <certificate-authority>
+                <ca-name>__CANAME__</ca-name>
+            </certificate-authority>
+        </create>
+    </authentication>
+</rpc>

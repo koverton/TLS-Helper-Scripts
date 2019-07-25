@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/9_0VMR">
+    <authentication>
+        <certificate-authority>
+            <ca-name>__CANAME__</ca-name>
+            <certificate>
+                <ca-certificate>__FILENAME__</ca-certificate>
+            </certificate>
+        </certificate-authority>
+    </authentication>
+</rpc>
