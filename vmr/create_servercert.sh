@@ -50,7 +50,7 @@ msg Creating the certificate by signing it
 openssl x509 -req \
   -in $name.csr \
   -CA ../ca/$caname.pem -CAkey ../ca/$caname.key -CAcreateserial \
-  -out $name.crt -days 1825 -sha256 -extfile $name.ext
+  -out $name.crt -days 824 -sha256 -extfile $name.ext
 cat $name.key > $name.pem; cat $name.crt >> $name.pem
 
 msg Your public-cert is $name.crt and server cert is $name.pem
